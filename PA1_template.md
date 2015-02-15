@@ -3,8 +3,6 @@
 
 ## Loading and preprocessing the data
 
-
-
 ```r
   library(plyr)
 ```
@@ -57,7 +55,7 @@ head(activities, n = 5L)
   hist(DailyTotal$TotalSteps, main="Histogram of Daily Total Steps", xlab="Daily Total Steps", col=c("blue"))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
 
 
 ```r
@@ -73,7 +71,7 @@ head(activities, n = 5L)
   plot(IntervalAvg$interval, IntervalAvg$avgsteps, type = "l", main="Time Series of 5-minute Interval Steps",xlab ="5-minute Interval", ylab = "Average Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
 
 ```r
   MaxInterval <- format(IntervalAvg[IntervalAvg$avgsteps==max(IntervalAvg$avgsteps),1])
@@ -95,7 +93,7 @@ head(activities, n = 5L)
   hist(ImpDailyTotal$TotalImputedSteps, main="Histogram of Daily Total Steps with Imputed Data", xlab="Daily Total Steps", col=c("green"))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-6-1.png) 
 
 ```r
   ImpMedianSteps <- format(median(ImpDailyTotal$TotalImputedSteps),big.mark=",")
@@ -118,4 +116,4 @@ head(activities, n = 5L)
   g + labs(x = "Interval") + labs(y="Average Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 

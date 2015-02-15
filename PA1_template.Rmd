@@ -1,16 +1,12 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
 output: 
-  html_document:
+  html_document: 
     keep_md: true
 ---
 
 
 ## Loading and preprocessing the data
-```{r echo=FALSE}
-setwd("C://Users/Joe.Walters/Desktop/Google Drive/Coursera/Reproducible Research/Project 1/RepData_PeerAssessment1")
-```
-
 ```{r echo=TRUE}
   
   library(plyr)
